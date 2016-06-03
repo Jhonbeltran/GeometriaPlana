@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>Proyecto Final</title>
+    <link rel="stylesheet" href="assets/normalize.css">
+    <link rel="stylesheet" type="text/css" href="assets/bootstrap.css">
+    <link rel="stylesheet" href="assets/general.css">
+    <link rel="stylesheet" type="text/css" href="assets/bootstrap-responsive.css">
+    <script src="assets/canvas.js"></script>
+    <script src="http://use.edgefonts.net/poiret-one:n4:all.js"></script>
+    <script src="http://use.edgefonts.net/nixie-one:n4:all;poiret-one:n4:all.js"></script>
+    <script src="http://use.edgefonts.net/nixie-one:n4:all;nova-slim:n4:all;poiret-one:n4:all.js"></script>
+    <script src="http://use.edgefonts.net/nixie-one:n4:all;poiret-one:n4:all;varela-round:n4:all.js"></script>
+    <link rel="stylesheet" type="text/css" href="assets/bootstrap-responsive.css">
+	<script src="http://code.jquery.com/jquery.min.js"></script>
+	<script src="assets/bootstrap-carousel.js"></script>
+	<script src="assets/bootstrap-transition.js"></script>
+    
+    
+    
+</head>
+<body onload="comenzar()">
+  <div id="container1">
+   <nav class="menu">
+      <h3>Curso Rápido de Geometría Plana</h3>
+       <ul>
+           <li><a href="cuestionario.html">Cuestionario</a></li>
+           <li><a href="canvas.html">Tablero de Dibujo</a></li>
+           <li><a href="intro.html">Conceptos</a></li>
+           <li><a href="index.html">Inicio</a></li>
+       </ul>
+   </nav>
+   <canvas id="canvas" width="800" height="500"></canvas>
+   <div id="botonera">
+		
+		<div id="rellenoFondo" ></div>
+
+		<div class="botones" onclick="cambioColor('333')"><img src="assets/canvas/negro.png"></div>
+		<div class="botones" onclick="cambioColor('fff')"><img src="assets/canvas/blanco.png"></div>
+		<div class="botones" onclick="cambioColor('fe0000')"><img src="assets/canvas/rojo.png"></div>
+		<div class="botones" onclick="cambioColor('800080')"><img src="assets/canvas/morado.png"></div>
+		<div class="botones" onclick="cambioColor('ffff00')"><img src="assets/canvas/amarillo.png"></div>
+		<div class="botones" onclick="cambioColor('00ff00')"><img src="assets/canvas/verde.png"></div>
+		<div class="botones" onclick="cambioColor('00ffff')"><img src="assets/canvas/azulClaro.png"></div>
+		<div class="botones" onclick="cambioColor('0000fe')"><img src="assets/canvas/azulOscuro.png"></div>
+		<div class="botones" id="fondo" onclick="cambioFondo()"><img src="assets/canvas/bg.png"></div>
+		
+		<br>
+		<div class="botones" onclick="cambioGrosor(1)"><img src="assets/canvas/grosor1.png"></div>
+		<div class="botones" onclick="cambioGrosor(2)"><img src="assets/canvas/grosor2.png"></div>
+		<div class="botones" onclick="cambioGrosor(3)"><img src="assets/canvas/grosor3.png"></div>
+		<div class="botones" onclick="cambioGrosor(4)"><img src="assets/canvas/grosor4.png"></div>
+		<div class="botones" onclick="cambioGrosor(5)"><img src="assets/canvas/grosor5.png"></div>
+		<div class="botones" onclick="cambioGrosor(8)"><img src="assets/canvas/grosor6.png"></div>
+		<div class="botones" onclick="cambioGrosor(10)"><img src="assets/canvas/grosor7.png"></div>
+		<div class="botones" onclick="cambioGrosor(15)"><img src="assets/canvas/grosor9.png"></div>
+		<div class="botones" onclick="cambioGrosor(20)"><img src="assets/canvas/grosor8.png"></div>
+	</div>
+  
+    <div id="retos">
+        
+        
+        <p><strong>Guia rapida: </strong>arriba tenemos la gama de colores para nuestro lapiz, y en la parte de abajo  tenemos el grosor del mismo.</p>
+    </div>
+    
+    <div id="tarea">
+        
+        <p><strong style="text-align: center">Algunos Retos</strong>
+        <ul>
+            <li>Dibuja un triangulo y un cuadrado.</li>
+            <li>Dibuja dos romboides de diferente color.</li>
+            <li>Dibuja dos pentagonos y un heptagono.</li>
+            <li>Dibuja un trapezoide azul</li>
+            <li>Dibuja un octagono y un eneagono.</li>
+        </ul></p>
+    </div>
+   
+      
+       </div>
+      
+
+<footer id="pie">Desarrollado por Felipe J. Santana - buhomachine 2016</footer>    
+</body>
+    
+</html>
